@@ -19,6 +19,7 @@ cmp r0, #0
 bne GotNum
 bl CheckCharInput
 bl FlushError
+b main
 
 GotNum:
 ldr r0, =userSelection
